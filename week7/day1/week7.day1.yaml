@@ -1,0 +1,20 @@
+3:00 to 4:00 --->Cucumber Introduction
+4:00 to 4:25 ---> Breakout
+4:25 to 4:35 ---> Break
+4:40 to 5:10 ---> Parameterization
+5:10 to 5:40 ---> Multiple data
+5:40 to 6:00 --->BreakOut
+
+PreRequisites:
+1)Cucumber Plugins
+2)Dependencies
+static parameterization:
+1)surround the data with single quote in the feature file.
+2)In the stepdefinition class,replace the data with {string}.
+3)pass the i/p args to the mthd and replace the hardcoded data with the args
+
+Steps to pass multiple data to a scenario using Scenario Outline and Examples:
+Create a feature file called CreateLead.feature and write all the BDD steps
+In Scenario Outline replace the data with <> and pass a name inside it Enter the companyname as
+In StepDefinition on the top of that particular method replace the parameterized data with (.*)$ @Given("Enter the companyname as (.*)$")
+
